@@ -1,1 +1,1 @@
-This is a another dummy file.
+# This is a another dummy file.
