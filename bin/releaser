@@ -6,7 +6,7 @@ fi
 
 PKG_NAME=$(grep APP_PACKAGE .env | cut -d '=' -f2)
 
-git checkout -b $PKG_NAME/$1
+#git checkout -b $PKG_NAME/$1
 git log $(git describe --tags --abbrev=0)..HEAD --oneline > .tag.temp
 _title="new version $1"
 _content="$1 has just been released."
@@ -29,4 +29,7 @@ while IFS= read -r line || [[ -n "$line" ]]; do
     fi
 done < .tag.temp
 git tag  "$1" $("origin/$_branch") -a -m "$_title" -m "$_content"
-git push origin $PKG_NAME/$1 "$1"
+git push origin master "$1"
+#git push origin $PKG_NAME/$1 "$1"
+#git checkout master
+#git branch -d $PKG_NAME/$1
