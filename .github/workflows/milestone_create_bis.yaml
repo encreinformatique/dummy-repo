@@ -26,5 +26,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           recurrence: 'FREQ=MONTHLY;BYDAY=FR;DTSTART=20230410T220000Z'
-          format: 'Mois de 02-Jan-06'
+          format: 'Mois de 02-Jan-2006'
           count: 2
