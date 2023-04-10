@@ -11,14 +11,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - uses: readmeio/scheduled-milestones@v1.1.0
+      - uses: readmeio/scheduled-milestones@v1.1.1
         id: run
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          title: d-
+          title: Semaine du 
           days: Thursday
           count: 4
-          format: YYYY.MM.DD
+          format: DD/MM/YYYY
 
       - name: result
         run: echo ${{ steps.run.outputs.milestones }}
