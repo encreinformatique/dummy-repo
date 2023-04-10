@@ -15,7 +15,7 @@ jobs:
         id: run
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          title: Semaine du 
+          title: 'Semaine du ' 
           days: Thursday
           count: 4
           format: DD/MM/YYYY
