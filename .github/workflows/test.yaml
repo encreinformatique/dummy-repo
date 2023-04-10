@@ -1,5 +1,5 @@
-name: Close
-on: [push]
+name: to be deleted
+on: [pull_request]
 
 jobs:
   milestones:
