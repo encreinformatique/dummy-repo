@@ -1,3 +1,6 @@
+name: Close
+on: [push]
+
 jobs:
   milestones:
     runs-on: ubuntu-latest
