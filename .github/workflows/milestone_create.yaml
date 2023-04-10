@@ -3,6 +3,7 @@ name: auto-create-milestone
 on:
   schedule:
     - cron: 0 0 * * SAT
+  push: ~
 
 jobs:
   generate:
