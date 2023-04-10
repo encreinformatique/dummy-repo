@@ -9,4 +9,4 @@ jobs:
     - name: Close Milestones
       uses: encreinformatique/github-actions-milestones-close@main
       env:
-        GITHUB_TOKEN: ${{ secrets.TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
