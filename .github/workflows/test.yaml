@@ -1,0 +1,9 @@
+jobs:
+  milestones:
+    runs-on: ubuntu-latest
+    name: Milestone Closer
+    steps:
+    - name: Close Milestones
+      uses: encreinformatique/github-actions-milestones-close@dev-main
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
